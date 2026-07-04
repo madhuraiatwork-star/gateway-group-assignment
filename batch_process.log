@@ -1,0 +1,49 @@
+16:43:49 | INFO     | Loaded 10 messages from messages.json
+16:43:49 | INFO     | ========================================================================
+16:43:49 | INFO     | message_id   | category               | priority | needs_human  | confidence
+16:43:49 | INFO     | ------------------------------------------------------------------------
+16:43:50 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:43:50 | INFO     | msg-001      | technical_support      | P0       | True         | 0.90  (lat=1.486s tok=634)
+16:43:52 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:43:52 | INFO     | msg-002      | billing                | P1       | True         | 0.90  (lat=1.039s tok=631)
+16:43:55 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:43:55 | INFO     | msg-003      | general_inquiry        | P3       | False        | 0.90  (lat=2.999s tok=634)
+16:43:57 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+16:43:57 | ERROR    | [msg-004] Unexpected error: Error code: 400 - {'error': {'message': "Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=submit_triage_decision> {"category": "general_inquiry", "confidence": 0.9, "needs_human": False, "priority": "P3", "suggested_action": "Thank you for your feedback", "summary": "User complimented the new dashboard UI"} </function>'}}. Using fallback.
+16:43:57 | INFO     | msg-004      | unclassified           | P3       | True         | 0.00  (lat=1.031s tok=0)
+16:43:58 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:43:58 | INFO     | msg-005      | technical_support      | P1       | True         | 0.80  (lat=1.119s tok=658)
+16:43:59 | INFO     | msg-006      | unclassified           | P3       | True         | 0.00  (lat=0.000s tok=0)
+16:44:01 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:44:01 | INFO     | msg-007      | general_inquiry        | P2       | False        | 0.80  (lat=1.166s tok=633)
+16:44:05 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:44:05 | INFO     | msg-008      | technical_support      | P0       | True         | 0.90  (lat=4.258s tok=641)
+16:44:06 | INFO     | msg-009      | unclassified           | P3       | True         | 0.00  (lat=0.000s tok=0)
+16:44:07 | INFO     | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+16:44:07 | INFO     | msg-010      | technical_support      | P0       | True         | 0.80  (lat=0.494s tok=635)
+16:44:07 | INFO     | ========================================================================
+16:44:07 | INFO     | ====================================================================
+16:44:07 | INFO     |   SESSION REPORT  |  model: llama-3.1-8b-instant
+16:44:07 | INFO     | ====================================================================
+16:44:07 | INFO     |   Messages processed : 10
+16:44:07 | INFO     |   Total wall-clock   : 13.593 s
+16:44:07 | INFO     |   Avg latency/msg    : 1.359 s
+16:44:07 | INFO     | --------------------------------------------------------------------
+16:44:07 | INFO     |   Token usage (totals)
+16:44:07 | INFO     |     Prompt tokens    : 3994
+16:44:07 | INFO     |     Completion tokens: 472
+16:44:07 | INFO     |     Total tokens     : 4466
+16:44:07 | INFO     |   Token usage (per-message averages)
+16:44:07 | INFO     |     Avg prompt       : 399.4 tok
+16:44:07 | INFO     |     Avg completion   : 47.2 tok
+16:44:07 | INFO     |     Avg total        : 446.6 tok
+16:44:07 | INFO     | --------------------------------------------------------------------
+16:44:07 | INFO     |   Estimated cost  (source: groq.com/pricing)
+16:44:07 | INFO     |     Rate - input     : $0.0500 / 1M tokens
+16:44:07 | INFO     |     Rate - output    : $0.0800 / 1M tokens
+16:44:07 | INFO     |     Cost - input     : $0.000200  (3994 tokens)
+16:44:07 | INFO     |     Cost - output    : $0.000038  (472 tokens)
+16:44:07 | INFO     |     TOTAL COST      : $0.000237
+16:44:07 | INFO     |     Projected /1K msgs: $0.0237
+16:44:07 | INFO     | ====================================================================
+16:44:07 | INFO     | Results written to D:\Gateway-assignment\results.json

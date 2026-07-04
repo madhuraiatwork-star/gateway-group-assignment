@@ -1,0 +1,21 @@
+# ── Triage Classifier — Python dependencies ───────────────────────────────
+# Install with: pip install -r requirements.txt
+# Python >= 3.11 recommended
+
+# LLM inference (Groq Cloud API)
+groq==0.37.1
+
+# Data validation & structured output
+pydantic==2.10.6
+
+# Agent orchestration
+langgraph==0.2.28
+langchain-core==0.3.86
+
+# Dashboard
+streamlit==1.32.2
+plotly==6.8.0
+pandas==2.0.2
+
+# Environment variable management (.env support)
+python-dotenv==1.2.2
