@@ -1,7 +1,7 @@
 
 
 # AI Decisions Note
-- [Live Link](https://madhuraiatwork-star-gateway-group-assignme-streamlit-app-fxyvmz.streamlit-app)
+- [Live Link](https://madhuraiatwork-star-gateway-group-assignme-streamlit-app-fxyvmz.streamlit.app)
 
 ## Model & Tools Used
 - **LLM:** `llama-3.1-8b-instant` served via **Groq**. Chose the 8B model over the 70B variant as a deliberate cost/latency tradeoff — for a high-volume, structure-first classification task, the extra reasoning depth of a 70B model wasn't worth the added cost and latency when the actual job (map a message to a fixed schema) doesn't require frontier-level reasoning. Groq was picked specifically for its fast inference on open-source models and free tier, keeping the pipeline cheap enough to run on every incoming message without per-message cost being a concern.
